@@ -1,0 +1,13 @@
+{
+  "command and control": "지휘통제(C2)",
+  "C2": "C2",
+  "remote access trojan": "원격제어 트로이목마(RAT)",
+  "rat": "RAT",
+  "initial access": "초기 침투",
+  "lateral movement": "수평 이동",
+  "credential dumping": "자격 증명 덤핑",
+  "exfiltration": "데이터 반출",
+  "persistence": "지속성",
+  "privilege escalation": "권한 상승",
+  "defense evasion": "방어 회피"
+}

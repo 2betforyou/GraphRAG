@@ -1,0 +1,10 @@
+transformers==4.53.3
+accelerate>=0.31.0
+peft==0.12.0
+bitsandbytes>=0.43.1
+datasets>=2.20.0
+sentencepiece
+pandas
+numpy
+faiss-cpu           # (선택) RAG 인덱싱
+sentence-transformers  # (선택) RAG 임베딩: intfloat/multilingual-e5-base 사용 권장(MIT)

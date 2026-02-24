@@ -1,0 +1,92 @@
+# 기본적으로 전부 무시
+*
+
+# 이 파일들/폴더는 추적
+!.gitignore
+!README.md
+
+# 상위 디렉토리만 열기
+!dataset/
+!pjy/
+!fin/
+
+# -------------------------
+# 공통: 디렉토리 탐색 허용
+# (하위에서 필요한 파일만 다시 허용하기 위해)
+# -------------------------
+!dataset/**/
+!pjy/**/
+!fin/**/
+
+# -------------------------
+# 코드/문서/설정 파일만 허용
+# -------------------------
+!dataset/**/*.py
+!dataset/**/*.sh
+!dataset/**/*.md
+!dataset/**/*.txt
+!dataset/**/*.yaml
+!dataset/**/*.yml
+!dataset/**/*.toml
+!dataset/**/*.ini
+!dataset/**/*.cfg
+!dataset/**/*.jsonl
+!dataset/**/*.ipynb
+!dataset/**/*.csv
+!dataset/**/*.tsv
+
+!pjy/**/*.py
+!pjy/**/*.sh
+!pjy/**/*.md
+!pjy/**/*.txt
+!pjy/**/*.yaml
+!pjy/**/*.yml
+!pjy/**/*.toml
+!pjy/**/*.ini
+!pjy/**/*.cfg
+!pjy/**/*.json
+!pjy/**/*.jsonl
+!pjy/**/*.ipynb
+!pjy/**/*.csv
+!pjy/**/*.tsv
+
+!fin/**/*.py
+!fin/**/*.sh
+!fin/**/*.md
+!fin/**/*.txt
+!fin/**/*.yaml
+!fin/**/*.yml
+!fin/**/*.toml
+!fin/**/*.ini
+!fin/**/*.cfg
+!fin/**/*.json
+!fin/**/*.jsonl
+!fin/**/*.ipynb
+!fin/**/*.csv
+!fin/**/*.tsv
+
+# -------------------------
+# 대용량/학습 산출물 무시 (최우선)
+# -------------------------
+
+# KorQuAD 원본 대형 train shard (dataset 내)
+dataset/korquad.github.io/dataset/KorQuAD_2.1/train/*.json
+
+# 모델/체크포인트/옵티마이저
+**/*.safetensors
+**/*.pt
+**/*.bin
+**/*.ckpt
+**/optimizer.pt
+
+# Hugging Face/QLoRA 산출물 디렉토리 패턴
+pjy/out-*/
+fin/out-*/
+
+# 체크포인트 디렉토리 전부
+**/checkpoint-*/
+
+# 캐시/파이썬 부산물
+**/__pycache__/
+**/*.pyc
+**/.ipynb_checkpoints/
