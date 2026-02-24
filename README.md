@@ -1,4 +1,9 @@
-# RAG for EXAONE-3.5-7.8B (Korean Laws/Guidelines)
+# GraphRAG 기반 금융보안 규제 해석 프레임워크 
+## 한국전자거래학회 2025 추계학술대회
+## 주성용 박준영 오병훈 이재우
+
+
+## RAG for EXAONE-3.5-7.8B (Korean Laws/Guidelines)
 
 이 패키지는 로컬 텍스트/JSONL 자료(법령, 시행령, 지침, MITRE 등)를 기반으로 **EXAONE-3.5-7.8B-Instruct**에 연결하는 RAG 파이프라인입니다.
 
